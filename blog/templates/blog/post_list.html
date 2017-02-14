@@ -1,16 +1,16 @@
 <html>
 <head>
-    <title>휘연이네</title>
+    <title>나는 요즘에</title>
 </head>
 <body>
 <div>
-    <h1><a href="/">휘연이네</a></h1>
+    <h2><a href="/">나는 요즘에</a></h2>
 </div>
 	{% for post in posts %}
 	    <div>
-	        <p>published: {{ post.published_date }}</p>
-	        <h1><a href="">{{ post.title }}</a></h1>
+	        <h2><a href="">{{ post.title }}</a></h2>
 	        <p>{{ post.text|linebreaksbr }}</p>
+	        <p>published: {{ post.published_date }}</p>
 	    </div>
 	{% endfor %}
 </body>
